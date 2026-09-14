@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Modern Mobile Launcher</string>
+    <string name="notification_capture_service_name">MML notification capture</string>
+</resources>

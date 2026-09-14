@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MML" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="android:windowBackground">@color/mml_background</item>
+        <item name="android:colorBackground">@color/mml_background</item>
+        <item name="android:colorAccent">@color/mml_accent</item>
+        <item name="android:textColorPrimary">@color/mml_primary</item>
+        <item name="android:textColorSecondary">@color/mml_secondary</item>
+        <item name="android:textColorLink">@color/mml_link</item>
+        <item name="android:navigationBarColor">@color/mml_background</item>
+        <item name="android:statusBarColor">@color/mml_background</item>
+        <item name="android:navigationBarDividerColor">@color/mml_rule</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:buttonStyle">@style/Widget.MML.Button</item>
+        <item name="android:editTextStyle">@style/Widget.MML.EditText</item>
+        <item name="android:alertDialogTheme">@style/Theme.MML.Dialog</item>
+    </style>
+
+    <style name="Theme.MML.Dialog" parent="android:style/Theme.Material.Dialog.Alert">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/mml_surface</item>
+        <item name="android:colorBackground">@color/mml_surface</item>
+        <item name="android:textColorPrimary">@color/mml_primary</item>
+        <item name="android:textColorSecondary">@color/mml_secondary</item>
+        <item name="android:textColorLink">@color/mml_link</item>
+        <item name="android:colorAccent">@color/mml_accent</item>
+    </style>
+</resources>
