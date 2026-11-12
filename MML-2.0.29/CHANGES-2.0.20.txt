@@ -1,0 +1,17 @@
+MML 2.0.20 changes
+
+- Automatic machine-event batching now uses a 250 ms quiet window instead of a fixed
+  40 ms sleep. Closely spaced notifications/Usage events can share fewer SQLite WAL
+  transactions and synchronous commits.
+- The quiet window extends when more automatic events arrive, but the oldest event in a
+  batch is never deliberately held beyond 1000 ms.
+- A batch flushes early at 32 jobs or when the existing 2 MiB transaction payload ceiling
+  is reached.
+- USER/deliberate writes remain immediate. The writer waits on its bounded queue rather
+  than sleeping blindly; a USER/checkpoint/storage job arriving during an automatic wait
+  wakes the writer and closes the current batch immediately.
+- There is still no periodic write timer. With no events, the writer remains blocked and
+  performs no batching I/O.
+- Retains 2.0.19 rolling automatic history, independent Notify notifications, tap-time
+  notification-action resolution, narrowed Settings activation, grouped-delete safety,
+  and the prior viewer/Home/app-launch fixes.

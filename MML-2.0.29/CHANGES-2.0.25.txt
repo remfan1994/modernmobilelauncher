@@ -1,0 +1,32 @@
+MML 2.0.25 changes
+==================
+Prepared: 2026-11-11
+
+FINAL ACTION / SETTINGS CLEANUP
+
+- Actionable Home rows retain the dark background and now use a two-gray checkered border
+  rather than a continuous outline. Pressed/focused state thickens the checkered edge without
+  reversing the row background.
+- The app picker contains only Find an app plus the installed-app list. Settings is removed
+  from that workflow.
+- MML posts one quiet, ongoing low-priority Settings notification when Android permits MML
+  notifications. Tapping it opens MML Settings. Long-pressing the reverse-video Home date
+  remains the second Settings entry point.
+- MML-owned pushed-log and Settings notifications are no longer captured into the activity
+  journal. The explicit Test notification capture item is the only self-notification exception.
+- Journal schema 6 performs a one-time cleanup of historical NOTIFICATION rows whose source is
+  vip.thatiam.mml, removing old self-notification garbage while preserving third-party and USER
+  records.
+- The protected Bloodguilt curse entry is now actionable. Its full detail surface, including
+  blank space below short text, opens https://www.bloodguiltcurse.net/.
+
+PRESERVED
+
+- One saved log entry maps to one optional persistent Android notification.
+- Notify extends the original row with Notification: posted metadata instead of inserting a
+  notification-postation journal row.
+- Pushed app-launch notifications remain ongoing/non-auto-canceling launcher targets.
+- Grouped display rows do not expose synthetic Notify.
+- Long-press detail text remains Android native text selection.
+- Stable version-1 .log.txt export, compact provenance, rolling storage, 250 ms automatic-event
+  coalescing, and the fixed #2B2B2B / #AAAAAA palette remain unchanged.

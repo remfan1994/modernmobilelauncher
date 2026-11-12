@@ -1,0 +1,91 @@
+MML readable log format
+=======================
+
+Status: stable format contract
+Current record version: 1
+Encoding: UTF-8
+Filename suffix: .log.txt
+
+PURPOSE
+
+The optional user-selected log folder is meant to remain useful without MML. Its files
+are ordinary UTF-8 text suitable for grep, sed, awk, a text editor, shell scripts, and
+archival tools. They are not JSON, a binary database, or an MML import format.
+
+VERSIONING RULE
+
+Every record begins with exactly:
+
+MML LOG RECORD 1
+
+The field names, order, escaping rules, and body framing documented below are frozen for
+record version 1. An incompatible future change requires a new record header such as
+MML LOG RECORD 2. Existing version-1 files remain version 1; MML does not silently
+reinterpret old files as a newer format.
+
+RECORD LAYOUT
+
+A version-1 record uses this exact field order:
+
+MML LOG RECORD 1
+UID: <escaped text>
+Time: <ISO-8601 timestamp>
+Time-Millis: <decimal integer>
+Captured-Millis: <decimal integer>
+Date: <YYYY-MM-DD>
+Timezone: <escaped text>
+Session: <escaped text>
+Kind: <escaped text>
+Source: <escaped text>
+Type: <escaped text>
+Title: <escaped text>
+Notification-Key-Hash: <escaped text>
+Body-Characters: <decimal integer>
+
+<body, stored literally>
+
+END MML LOG RECORD
+
+A blank line follows the end marker. A .log.txt file may contain more than one record.
+
+ESCAPING
+
+Metadata fields are one physical line each. In metadata only:
+
+  backslash becomes \\
+  newline becomes \n
+  carriage return becomes \r
+
+The Body is different: it is written literally, including its original line breaks.
+Body-Characters is the Java String.length() count used by MML, meaning UTF-16 code
+units rather than UTF-8 bytes. The body length exists so a parser does not have to rely
+on the END marker occurring nowhere inside user text.
+
+SCRIPTING GUIDANCE
+
+For simple searching, treat the file as normal text. For a structural parser, first read
+and verify the record header, then read the fixed metadata fields in the order above.
+After Body-Characters, consume the blank line and exactly that many UTF-16 code units
+from the decoded text as the Body. Then consume the blank line and END MML LOG RECORD.
+
+Scripts should discover files by the .log.txt suffix rather than assigning meaning to
+the current filename components. The record contents, not the filename, are the stable
+interface.
+
+SEMANTICS
+
+Time is the event time represented by the record. Captured-Millis is when MML captured
+or constructed the record. Kind is the broad source class. Source is the originating
+app/provider label or package information stored by MML. Type is the event subtype.
+Notification-Key-Hash is present only where MML has a notification identity; it is not a
+replayable PendingIntent or secret capability.
+
+The user-selected folder is an additional readable copy. MML's working log remains the
+private app-data SQLite journal. Deleting a row from MML does not rewrite copies already
+written to the user-selected folder.
+
+COMPATIBILITY PROMISE
+
+MML may create additional .log.txt files, change batching, or change filenames without
+changing record version 1. MML will not change the meaning or order of the version-1
+record fields without introducing a new record version.

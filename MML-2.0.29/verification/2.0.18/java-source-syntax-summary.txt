@@ -1,0 +1,2 @@
+javac exit status: 1 (expected nonzero without android.jar)
+No common Java syntax diagnostics found; unresolved Android framework types remain expected.

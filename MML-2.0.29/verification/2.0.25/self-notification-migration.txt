@@ -1,0 +1,4 @@
+before [('self', 'NOTIFICATION', 'vip.thatiam.mml', 'posted'), ('real', 'NOTIFICATION', 'vip.thatiam.rfs', 'posted'), ('app', 'USER', 'vip.thatiam.rfs', 'app_launch')]
+after [('real', 'NOTIFICATION', 'vip.thatiam.rfs', 'posted'), ('app', 'USER', 'vip.thatiam.rfs', 'app_launch')]
+integrity ok
+PASS: self notification removed; third-party notification and app-launch row preserved

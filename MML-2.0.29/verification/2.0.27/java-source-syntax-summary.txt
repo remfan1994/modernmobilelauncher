@@ -1,0 +1,3 @@
+javac error lines: 1116
+Android framework available: no
+syntax/arity markers: {}

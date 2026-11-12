@@ -1,0 +1,2 @@
+javac_exit_nonzero_expected_without_android_jar: yes
+syntax_error_markers: none

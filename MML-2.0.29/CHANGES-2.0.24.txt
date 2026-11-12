@@ -1,0 +1,36 @@
+MML 2.0.24 changes
+==================
+Prepared: 2026-11-11
+
+ACTION CUE
+
+- Actionable Home rows no longer use reverse-video backgrounds.
+- They keep the normal dark #2B2B2B background and light #AAAAAA text.
+- A 2 dp light-gray outline marks the action path; pressed/focused state thickens the
+  outline to 3 dp without changing the background.
+- The cue still means only that the single row has a contextual detail action. It is not
+  a pin, favorite, selection, or storage state.
+
+DETAIL TAP AREA
+
+- The selectable detail TextView fills the 420 dp scroll viewport.
+- Blank content space below short entry text therefore invokes the same contextual action
+  as tapping the text itself.
+- Delete/Notify controls and dialog chrome are outside that action surface.
+- Native long-press text selection remains unchanged; a tap while text is selected does
+  not activate the contextual action.
+
+GROUPED NOTIFY
+
+- Notify is shown only when the detail window represents one real saved journal entry.
+- Grouped display rows no longer manufacture a synthetic grouped_log notification.
+- The notification model is one saved log entry -> one optional persistent Android
+  notification. Android may still visually group notifications on its own.
+
+PRESERVED
+
+- 2.0.23 original-row Notification: posted extension and self-notification capture
+  exclusion.
+- Ongoing/non-auto-cancel pushed notifications.
+- Stable version-1 .log.txt export, compact provenance, rolling storage, 250 ms automatic
+  batching, app picker/Home behavior, and the two-gray palette.

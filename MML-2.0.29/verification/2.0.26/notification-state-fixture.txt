@@ -1,0 +1,5 @@
+notify -> restart selection: PASS [('app-a',)]
+unnotify preserves row: PASS
+delete notified row leaves no restore state: PASS
+clear-all preserves log rows: PASS
+integrity: ok

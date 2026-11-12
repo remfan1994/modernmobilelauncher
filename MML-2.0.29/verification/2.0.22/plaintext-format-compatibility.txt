@@ -1,0 +1,24 @@
+2.0.21 vs 2.0.22 fixed-record plaintext output: IDENTICAL
+8c828d4a150225e2b229eae148a71d0206c60b809886657c7ecb811ea1c946e7  /tmp/mml-format-old.txt
+8c828d4a150225e2b229eae148a71d0206c60b809886657c7ecb811ea1c946e7  /tmp/mml-format-new.txt
+
+MML LOG RECORD 1
+UID: fixture-uid
+Time: 2023-11-14T22:13:20.123Z
+Time-Millis: 1700000000123
+Captured-Millis: 1700000000456
+Date: 2023-11-14
+Timezone: UTC
+Session: fixture-session
+Kind: NOTIFICATION
+Source: vip.example.app
+Type: posted
+Title: Fixture title
+Notification-Key-Hash: 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef
+Body-Characters: 23
+
+Line one
+Line two\slash
+
+END MML LOG RECORD
+

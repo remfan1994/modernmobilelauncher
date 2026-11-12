@@ -1,0 +1,78 @@
+MML interaction contract
+========================
+
+These rules are stable unless a release explicitly changes them.
+
+HOME
+
+- Tap a log row: open that row's full-screen detail view. A Home-row tap never directly launches an app
+  or executes a notification action.
+- Checkered-border log row: that single entry has a contextual detail action. The background
+  remains dark. The border is not a pin, favorite, selection, or storage state.
+- Tap the reverse-video date: append another Bloodguilt curse warning to the journal.
+- Long-press the date or ordinary Home surfaces: no Settings shortcut.
+- Make a log entry: open the searchable app picker.
+
+APP PICKER
+
+- App picker is a full-screen MML surface.
+- Find an app is at the top.
+- Settings is one full-width button at the bottom and is the sole direct MML Settings entry point.
+- Tap one app: save one USER/app_launch entry, wait for journal acknowledgement, return MML state
+  to Home, then launch that app.
+- Long-press one app: open full-screen App info; do not launch it.
+- List view shows one-line names. Brick view shows compact first-seven-code-point labels in a
+  multi-column grid. The List/Brick preference exists in Settings, not in the picker.
+- Android Home: return Home and hide the keyboard.
+- Android Back: return Home without launching.
+
+APP INFO
+
+- App info is full-screen.
+- Show app label, package name, version name/code, and a link to Android's package App info page.
+- Android Back returns to the app picker.
+
+ENTRY DETAIL
+
+- Entry detail is full-screen.
+
+- Long-press text: use Android's native text selection/copy behavior.
+- A tap while text is selected cannot activate the entry.
+- Tap app-launch detail text or blank detail space: launch the recorded package.
+- Tap Bloodguilt warning detail text or blank detail space: show "Goes to internet. Continue?".
+  Continue opens bloodguiltcurse.net; Cancel stays in MML. The browser is never opened before confirmation.
+- Tap eligible notification detail text or blank detail space: resolve and invoke its current
+  live Android content action.
+- Notify exists only for one real saved entry. After success it becomes Unnotify.
+- Unnotify clears durable notified state and removes that Android card without deleting the row.
+- Grouped display rows have no synthetic Notify.
+- Delete removes journal rows. Android log-entry notifications are then reconciled from durable
+  state so unrelated cards remain correct.
+
+ANDROID NOTIFICATION CARD
+
+- Main tap: perform the notification's useful action. For app-launch entries this launches the app.
+- Log: open the exact source MML log entry.
+- Remove: unnotify that source row without opening MML.
+- Cards are ongoing/non-auto-canceling and survive action use.
+- A fresh MML process rebuilds cards from durable notified journal rows.
+- At most one app-launch card is durable per package; notifying a newer launch row for the same
+  package transfers ownership to the newer row.
+
+NOTIFIED LOGS
+
+- Notified logs is a full-screen MML surface.
+- Settings > Logs > Notified logs is the central manager.
+- Tap a listed entry: open its source log.
+- Remove: unnotify only that entry.
+- Clear all: clear all MML log-entry notifications without deleting journal rows.
+
+PROVENANCE
+
+- Entry detail metadata ends with a small Provenance line naming the capture path.
+- Provenance is informational and does not open another Settings surface.
+
+SELF NOTIFICATIONS
+
+- MML-owned log-entry notifications are controls/copies, not journal events.
+- The explicit capture-test notification is the only MML-owned notification admitted to capture.

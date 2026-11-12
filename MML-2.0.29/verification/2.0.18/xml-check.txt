@@ -1,0 +1,3 @@
+OK app/src/main/AndroidManifest.xml
+OK app/src/main/res/values/styles.xml
+XML files parsed: 2

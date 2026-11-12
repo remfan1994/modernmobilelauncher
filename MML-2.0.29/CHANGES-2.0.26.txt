@@ -1,0 +1,40 @@
+MML 2.0.26 changes
+Prepared: 2026-11-11
+
+NOTIFY / UNNOTIFY
+
+- Notify is now a durable reversible state on one saved journal row.
+- A row with notified_ms > 0 opens with an Unnotify button instead of Notify.
+- Unnotify clears notified_ms and cancels only that row's UID-tagged Android notification.
+- The log row itself is not deleted.
+- Notify still keeps separate persistent notifications for separate saved entries.
+
+DELETE
+
+- After a journal delete succeeds, MML cancels Android notifications for every deleted row.
+- This also handles rows whose in-memory notified flag is stale: cancellation uses the stable UID.
+
+CLEAR NOTIFICATIONS
+
+- Settings > Logs now includes Clear notifications.
+- It confirms before clearing.
+- Clear notifications resets notified_ms for all saved rows and removes only log-entry
+  notifications; it does not delete journal rows or remove the persistent MML Settings control.
+
+PROCESS RESTORE
+
+- On a fresh Activity/process start, MML removes stale active log-entry notifications and pages
+  through durable notified_ms > 0 rows in row order, reposting each persistent notification.
+- This restores Notify state after process death or an explicit force-stop followed by relaunch.
+- The reconciliation also removes orphan cards left by rows deleted by an older MML build.
+- No boot receiver, polling loop, alarm, JobScheduler, WorkManager, wake lock, or foreground
+  collector was added.
+
+PRESERVED
+
+- MML-owned ordinary notifications do not re-enter the journal.
+- Pushed notifications remain ongoing and non-auto-canceling.
+- Grouped display rows have no synthetic Notify.
+- App-launch notification taps launch the recorded app without removing the card.
+- Settings remains available through the persistent MML Settings notification and date long-press.
+- Two-gray checkered action borders and the full detail-surface action path are unchanged.

@@ -1,0 +1,50 @@
+<resources>
+    <style name="MmlTheme" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">#AAAAAA</item>
+        <item name="android:colorBackground">#2B2B2B</item>
+        <item name="android:colorForeground">#AAAAAA</item>
+        <item name="android:textColorPrimary">#AAAAAA</item>
+        <item name="android:textColorSecondary">#AAAAAA</item>
+        <item name="android:textColorHint">#AAAAAA</item>
+        <item name="android:colorButtonNormal">#AAAAAA</item>
+        <item name="android:colorControlNormal">#AAAAAA</item>
+        <item name="android:colorControlActivated">#AAAAAA</item>
+        <item name="android:colorControlHighlight">#AAAAAA</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="android:navigationBarDividerColor">#AAAAAA</item>
+        <item name="android:statusBarColor">#2B2B2B</item>
+        <item name="android:navigationBarColor">#2B2B2B</item>
+        <item name="android:windowBackground">#2B2B2B</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+    </style>
+    <style name="MmlDialog" parent="android:style/Theme.Material.Dialog.Alert">
+        <item name="android:colorAccent">#AAAAAA</item>
+        <item name="android:colorBackground">#2B2B2B</item>
+        <item name="android:colorForeground">#AAAAAA</item>
+        <item name="android:windowBackground">#2B2B2B</item>
+        <item name="android:textColorPrimary">#AAAAAA</item>
+        <item name="android:textColorSecondary">#AAAAAA</item>
+        <item name="android:textColorHint">#AAAAAA</item>
+        <item name="android:colorButtonNormal">#AAAAAA</item>
+        <item name="android:colorControlNormal">#AAAAAA</item>
+        <item name="android:colorControlActivated">#AAAAAA</item>
+        <item name="android:colorControlHighlight">#AAAAAA</item>
+        <item name="android:windowTitleStyle">@style/MmlDialogTitle</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textAppearanceListItem">@style/MmlDialogText</item>
+        <item name="android:textAppearanceListItemSmall">@style/MmlDialogText</item>
+        <item name="android:listPreferredItemHeightSmall">56dp</item>
+    </style>
+    <style name="MmlDialogText" parent="android:style/TextAppearance.Material.Body1">
+        <item name="android:textColor">#AAAAAA</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+    <style name="MmlDialogTitle" parent="android:style/TextAppearance.Material.Title">
+        <item name="android:textColor">#AAAAAA</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+</resources>

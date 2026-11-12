@@ -1,0 +1,2 @@
+Java syntax scan: PASS; no parser/delimiter/duplicate-definition markers found.
+Android framework type checking is unavailable because android.jar is not installed.

@@ -1,0 +1,50 @@
+MML 2.0.22 changes
+Prepared: 2026-11-11
+
+PURPOSE
+
+This is a small transparency and interaction-contract pass on 2.0.21. It does not add
+pinning, another Settings subsystem, a diagnostics screen, or another collector.
+
+HOME ACTION CUE
+
+- A single Home log row is shown in reverse video when its detail surface has an action
+  path: USER/app_launch, or an eligible posted/active notification with saved notification
+  identity.
+- Grouped rows are not marked directly actionable because the grouped detail surface does
+  not execute one member's action.
+- Reverse video means action-capable detail path only. It is not pin/favorite/selection or
+  retention state.
+
+PROVENANCE
+
+- Entry detail trailing metadata now ends with one small Provenance line.
+- Current values identify the capture path without opening another screen: MML app picker,
+  Android Share to MML, MML user action, Android notification access, Android Usage history,
+  Android SMS provider, Android call log provider, Android system event, or MML.
+- Provenance uses the same small condensed metadata treatment as Source/Type.
+
+STABLE TEXT LOG FORMAT
+
+- The existing readable .log.txt bytes remain version 1; no migration or output rewrite is
+  introduced by this release.
+- PlainTextLogCodec now exposes FORMAT_VERSION = 1 and emits the same MML LOG RECORD 1
+  header through that constant.
+- TEXT-LOG-FORMAT.txt freezes the version-1 field order, escaping, body framing, semantics,
+  and compatibility rule. Incompatible future changes require a new record version.
+- Filenames are explicitly not part of the stable parsing interface; scripts should find
+  *.log.txt files and parse record contents.
+
+STABLE SEMANTICS
+
+- INTERACTION-CONTRACT.txt records the established meanings of Home-row tap, reverse-video
+  row, detail tap, long-press selection, Notify, Delete, Back, Home from the app picker,
+  and the hidden Settings long-press.
+- This is documentation and regression policy, not a new UI surface.
+
+PRESERVED
+
+- 2.0.21 simple app-data/log-folder Settings wording and separated dialog buttons.
+- 2.0.20 automatic batching policy.
+- 2.0.19 rolling storage and notification pile-up.
+- 2.0.18 first-tap detail activation and narrowed Settings long-press.

@@ -1,0 +1,387 @@
+app/src/main/java/vip/thatiam/mml/BrightnessListView.java:3: error: package android.content does not exist
+import android.content.Context;
+                      ^
+app/src/main/java/vip/thatiam/mml/BrightnessListView.java:4: error: package android.os does not exist
+import android.os.SystemClock;
+                 ^
+app/src/main/java/vip/thatiam/mml/BrightnessListView.java:5: error: package android.view does not exist
+import android.view.MotionEvent;
+                   ^
+app/src/main/java/vip/thatiam/mml/BrightnessListView.java:6: error: package android.view does not exist
+import android.view.ViewConfiguration;
+                   ^
+app/src/main/java/vip/thatiam/mml/BrightnessListView.java:7: error: package android.view does not exist
+import android.view.ViewParent;
+                   ^
+app/src/main/java/vip/thatiam/mml/BrightnessListView.java:8: error: package android.view.accessibility does not exist
+import android.view.accessibility.AccessibilityManager;
+                                 ^
+app/src/main/java/vip/thatiam/mml/BrightnessListView.java:9: error: package android.widget does not exist
+import android.widget.ListView;
+                     ^
+app/src/main/java/vip/thatiam/mml/BrightnessListView.java:12: error: cannot find symbol
+final class BrightnessListView extends ListView {
+                                       ^
+  symbol: class ListView
+app/src/main/java/vip/thatiam/mml/BrightnessListView.java:26: error: cannot find symbol
+  BrightnessListView(Context context, Listener listener) {
+                     ^
+  symbol:   class Context
+  location: class BrightnessListView
+app/src/main/java/vip/thatiam/mml/BrightnessListView.java:33: error: cannot find symbol
+  public boolean dispatchTouchEvent(MotionEvent event) {
+                                    ^
+  symbol:   class MotionEvent
+  location: class BrightnessListView
+app/src/main/java/vip/thatiam/mml/BrightnessListView.java:133: error: cannot find symbol
+  private void cancelNativeTouch(MotionEvent event) {
+                                 ^
+  symbol:   class MotionEvent
+  location: class BrightnessListView
+app/src/main/java/vip/thatiam/mml/CrashRecorder.java:3: error: package android.app does not exist
+import android.app.ActivityManager;
+                  ^
+app/src/main/java/vip/thatiam/mml/CrashRecorder.java:4: error: package android.app does not exist
+import android.app.ApplicationExitInfo;
+                  ^
+app/src/main/java/vip/thatiam/mml/CrashRecorder.java:5: error: package android.content does not exist
+import android.content.Context;
+                      ^
+app/src/main/java/vip/thatiam/mml/CrashRecorder.java:25: error: cannot find symbol
+  static void install(Context context) {
+                      ^
+  symbol:   class Context
+  location: class CrashRecorder
+app/src/main/java/vip/thatiam/mml/CrashRecorder.java:44: error: cannot find symbol
+  private static void write(Context context, Thread thread, Throwable error) throws Exception {
+                            ^
+  symbol:   class Context
+  location: class CrashRecorder
+app/src/main/java/vip/thatiam/mml/CrashRecorder.java:85: error: cannot find symbol
+  static String report(Context context) {
+                       ^
+  symbol:   class Context
+  location: class CrashRecorder
+app/src/main/java/vip/thatiam/mml/EntryNotifications.java:3: error: package android does not exist
+import android.Manifest;
+              ^
+app/src/main/java/vip/thatiam/mml/EntryNotifications.java:4: error: package android.app does not exist
+import android.app.Notification;
+                  ^
+app/src/main/java/vip/thatiam/mml/EntryNotifications.java:5: error: package android.app does not exist
+import android.app.NotificationChannel;
+                  ^
+app/src/main/java/vip/thatiam/mml/EntryNotifications.java:6: error: package android.app does not exist
+import android.app.NotificationManager;
+                  ^
+app/src/main/java/vip/thatiam/mml/EntryNotifications.java:7: error: package android.app does not exist
+import android.app.PendingIntent;
+                  ^
+app/src/main/java/vip/thatiam/mml/EntryNotifications.java:8: error: package android.content does not exist
+import android.content.Context;
+                      ^
+app/src/main/java/vip/thatiam/mml/EntryNotifications.java:9: error: package android.content does not exist
+import android.content.Intent;
+                      ^
+app/src/main/java/vip/thatiam/mml/EntryNotifications.java:10: error: package android.content.pm does not exist
+import android.content.pm.PackageManager;
+                         ^
+app/src/main/java/vip/thatiam/mml/EntryNotifications.java:11: error: package android.provider does not exist
+import android.provider.Settings;
+                       ^
+app/src/main/java/vip/thatiam/mml/EntryNotifications.java:21: error: cannot find symbol
+  static String post(Context context, Entry entry) {
+                     ^
+  symbol:   class Context
+  location: class EntryNotifications
+app/src/main/java/vip/thatiam/mml/EntryNotifications.java:71: error: cannot find symbol
+  static Intent settingsIntent(Context context) {
+                               ^
+  symbol:   class Context
+  location: class EntryNotifications
+app/src/main/java/vip/thatiam/mml/EntryNotifications.java:71: error: cannot find symbol
+  static Intent settingsIntent(Context context) {
+         ^
+  symbol:   class Intent
+  location: class EntryNotifications
+app/src/main/java/vip/thatiam/mml/HistoryCollector.java:3: error: package android does not exist
+import android.Manifest;
+              ^
+app/src/main/java/vip/thatiam/mml/HistoryCollector.java:4: error: package android.app does not exist
+import android.app.AppOpsManager;
+                  ^
+app/src/main/java/vip/thatiam/mml/HistoryCollector.java:5: error: package android.app.usage does not exist
+import android.app.usage.UsageEvents;
+                        ^
+app/src/main/java/vip/thatiam/mml/HistoryCollector.java:6: error: package android.app.usage does not exist
+import android.app.usage.UsageStatsManager;
+                        ^
+app/src/main/java/vip/thatiam/mml/HistoryCollector.java:7: error: package android.content does not exist
+import android.content.Context;
+                      ^
+app/src/main/java/vip/thatiam/mml/HistoryCollector.java:8: error: package android.content does not exist
+import android.content.SharedPreferences;
+                      ^
+app/src/main/java/vip/thatiam/mml/HistoryCollector.java:9: error: package android.content.pm does not exist
+import android.content.pm.PackageManager;
+                         ^
+app/src/main/java/vip/thatiam/mml/HistoryCollector.java:10: error: package android.database does not exist
+import android.database.Cursor;
+                       ^
+app/src/main/java/vip/thatiam/mml/HistoryCollector.java:11: error: package android.net does not exist
+import android.net.Uri;
+                  ^
+app/src/main/java/vip/thatiam/mml/HistoryCollector.java:12: error: package android.os does not exist
+import android.os.Process;
+                 ^
+app/src/main/java/vip/thatiam/mml/HistoryCollector.java:13: error: package android.os does not exist
+import android.os.UserManager;
+                 ^
+app/src/main/java/vip/thatiam/mml/HistoryCollector.java:14: error: package android.provider does not exist
+import android.provider.CallLog;
+                       ^
+app/src/main/java/vip/thatiam/mml/HistoryCollector.java:15: error: package android.provider does not exist
+import android.provider.Telephony;
+                       ^
+app/src/main/java/vip/thatiam/mml/HistoryCollector.java:60: error: cannot find symbol
+  public static void request(Context context) {
+                             ^
+  symbol:   class Context
+  location: class HistoryCollector
+app/src/main/java/vip/thatiam/mml/HistoryCollector.java:97: error: cannot find symbol
+  private static void collect(Context context) {
+                              ^
+  symbol:   class Context
+  location: class HistoryCollector
+app/src/main/java/vip/thatiam/mml/HistoryCollector.java:142: error: cannot find symbol
+  public static boolean hasUsageAccess(Context context) {
+                                       ^
+  symbol:   class Context
+  location: class HistoryCollector
+app/src/main/java/vip/thatiam/mml/HistoryCollector.java:150: error: cannot find symbol
+  private static void collectUsage(Context context) {
+                                   ^
+  symbol:   class Context
+  location: class HistoryCollector
+app/src/main/java/vip/thatiam/mml/HistoryCollector.java:220: error: cannot find symbol
+  private static void collectRows(Context context, boolean calls) {
+                                  ^
+  symbol:   class Context
+  location: class HistoryCollector
+app/src/main/java/vip/thatiam/mml/HistoryCollector.java:318: error: cannot find symbol
+  private static long highestId(Context context, Uri uri) {
+                                ^
+  symbol:   class Context
+  location: class HistoryCollector
+app/src/main/java/vip/thatiam/mml/HistoryCollector.java:318: error: cannot find symbol
+  private static long highestId(Context context, Uri uri) {
+                                                 ^
+  symbol:   class Uri
+  location: class HistoryCollector
+app/src/main/java/vip/thatiam/mml/Journal.java:3: error: package android.app does not exist
+import android.app.ActivityManager;
+                  ^
+app/src/main/java/vip/thatiam/mml/Journal.java:4: error: package android.app does not exist
+import android.app.ApplicationExitInfo;
+                  ^
+app/src/main/java/vip/thatiam/mml/Journal.java:5: error: package android.app does not exist
+import android.app.NotificationManager;
+                  ^
+app/src/main/java/vip/thatiam/mml/Journal.java:6: error: package android.content does not exist
+import android.content.ComponentName;
+                      ^
+app/src/main/java/vip/thatiam/mml/Journal.java:7: error: package android.content does not exist
+import android.content.ContentValues;
+                      ^
+app/src/main/java/vip/thatiam/mml/Journal.java:8: error: package android.content does not exist
+import android.content.Context;
+                      ^
+app/src/main/java/vip/thatiam/mml/Journal.java:9: error: package android.content does not exist
+import android.content.SharedPreferences;
+                      ^
+app/src/main/java/vip/thatiam/mml/Journal.java:10: error: package android.database does not exist
+import android.database.Cursor;
+                       ^
+app/src/main/java/vip/thatiam/mml/Journal.java:11: error: package android.database.sqlite does not exist
+import android.database.sqlite.SQLiteDatabase;
+                              ^
+app/src/main/java/vip/thatiam/mml/Journal.java:12: error: package android.database.sqlite does not exist
+import android.database.sqlite.SQLiteException;
+                              ^
+app/src/main/java/vip/thatiam/mml/Journal.java:13: error: package android.database.sqlite does not exist
+import android.database.sqlite.SQLiteOpenHelper;
+                              ^
+app/src/main/java/vip/thatiam/mml/Journal.java:14: error: package android.os does not exist
+import android.os.CancellationSignal;
+                 ^
+app/src/main/java/vip/thatiam/mml/Journal.java:15: error: package android.os does not exist
+import android.os.Handler;
+                 ^
+app/src/main/java/vip/thatiam/mml/Journal.java:16: error: package android.os does not exist
+import android.os.Looper;
+                 ^
+app/src/main/java/vip/thatiam/mml/Journal.java:17: error: package android.os does not exist
+import android.os.Process;
+                 ^
+app/src/main/java/vip/thatiam/mml/Journal.java:18: error: package android.os does not exist
+import android.os.SystemClock;
+                 ^
+app/src/main/java/vip/thatiam/mml/Journal.java:19: error: package android.provider does not exist
+import android.provider.Settings;
+                       ^
+app/src/main/java/vip/thatiam/mml/HistoryCollector.java:354: error: cannot find symbol
+  private static void failure(Context context, String source, RuntimeException error) {
+                              ^
+  symbol:   class Context
+  location: class HistoryCollector
+app/src/main/java/vip/thatiam/mml/HistoryCollector.java:430: error: cannot find symbol
+  private static boolean usageTypeEnabled(SharedPreferences prefs, int type) {
+                                          ^
+  symbol:   class SharedPreferences
+  location: class HistoryCollector
+app/src/main/java/vip/thatiam/mml/Journal.java:43: error: cannot find symbol
+  private final Context context;
+                ^
+  symbol:   class Context
+  location: class Journal
+app/src/main/java/vip/thatiam/mml/Journal.java:1063: error: cannot find symbol
+  private static final class Database extends SQLiteOpenHelper {
+                                              ^
+  symbol:   class SQLiteOpenHelper
+  location: class Journal
+app/src/main/java/vip/thatiam/mml/Journal.java:49: error: cannot find symbol
+  private final Handler main = new Handler(Looper.getMainLooper());
+                ^
+  symbol:   class Handler
+  location: class Journal
+app/src/main/java/vip/thatiam/mml/Journal.java:72: error: cannot find symbol
+  public static Journal get(Context context) {
+                            ^
+  symbol:   class Context
+  location: class Journal
+app/src/main/java/vip/thatiam/mml/Journal.java:80: error: cannot find symbol
+  private Journal(Context context) {
+                  ^
+  symbol:   class Context
+  location: class Journal
+app/src/main/java/vip/thatiam/mml/Journal.java:512: error: cannot find symbol
+  private void updateStorageSnapshot(SQLiteDatabase db, boolean force) {
+                                     ^
+  symbol:   class SQLiteDatabase
+  location: class Journal
+app/src/main/java/vip/thatiam/mml/Journal.java:540: error: cannot find symbol
+  private static long pragmaLong(SQLiteDatabase db, String pragma) {
+                                 ^
+  symbol:   class SQLiteDatabase
+  location: class Journal
+app/src/main/java/vip/thatiam/mml/Journal.java:547: error: cannot find symbol
+  private void rollAutomaticHistory(SQLiteDatabase db) {
+                                    ^
+  symbol:   class SQLiteDatabase
+  location: class Journal
+app/src/main/java/vip/thatiam/mml/Journal.java:598: error: cannot find symbol
+  private long mirrorPruneCeiling(SQLiteDatabase db) {
+                                  ^
+  symbol:   class SQLiteDatabase
+  location: class Journal
+app/src/main/java/vip/thatiam/mml/Journal.java:650: error: cannot find symbol
+  private void ensureSession(SQLiteDatabase db) {
+                             ^
+  symbol:   class SQLiteDatabase
+  location: class Journal
+app/src/main/java/vip/thatiam/mml/Journal.java:696: error: cannot find symbol
+  private void writeJob(SQLiteDatabase db, Job job) {
+                        ^
+  symbol:   class SQLiteDatabase
+  location: class Journal
+app/src/main/java/vip/thatiam/mml/Journal.java:725: error: cannot find symbol
+  private static void setMetadata(SQLiteDatabase db, String key, String value) {
+                                  ^
+  symbol:   class SQLiteDatabase
+  location: class Journal
+app/src/main/java/vip/thatiam/mml/Journal.java:733: error: cannot find symbol
+  private static void insert(SQLiteDatabase db, Entry e) {
+                             ^
+  symbol:   class SQLiteDatabase
+  location: class Journal
+app/src/main/java/vip/thatiam/mml/Journal.java:786: error: cannot find symbol
+  public List<Entry> homePage(long before, int limit, CancellationSignal cancellation) {
+                                                      ^
+  symbol:   class CancellationSignal
+  location: class Journal
+app/src/main/java/vip/thatiam/mml/Journal.java:790: error: cannot find symbol
+  public EntryPage homeWindow(long before, int limit, CancellationSignal cancellation) {
+                                                      ^
+  symbol:   class CancellationSignal
+  location: class Journal
+app/src/main/java/vip/thatiam/mml/Journal.java:799: error: cannot find symbol
+      CancellationSignal cancellation) {
+      ^
+  symbol:   class CancellationSignal
+  location: class Journal
+app/src/main/java/vip/thatiam/mml/Journal.java:825: error: cannot find symbol
+      String where, String[] args, String order, int limit, CancellationSignal cancellation) {
+                                                            ^
+  symbol:   class CancellationSignal
+  location: class Journal
+app/src/main/java/vip/thatiam/mml/Journal.java:830: error: cannot find symbol
+      String where, String[] args, String order, int limit, CancellationSignal cancellation) {
+                                                            ^
+  symbol:   class CancellationSignal
+  location: class Journal
+app/src/main/java/vip/thatiam/mml/Journal.java:913: error: cannot find symbol
+  public String integrity(CancellationSignal cancellation) {
+                          ^
+  symbol:   class CancellationSignal
+  location: class Journal
+app/src/main/java/vip/thatiam/mml/Journal.java:921: error: cannot find symbol
+  static Entry fromCursor(Cursor c) {
+                          ^
+  symbol:   class Cursor
+  location: class Journal
+app/src/main/java/vip/thatiam/mml/Journal.java:1064: error: cannot find symbol
+    Database(Context context) {
+             ^
+  symbol:   class Context
+  location: class Database
+app/src/main/java/vip/thatiam/mml/Journal.java:1077: error: cannot find symbol
+    public void onConfigure(SQLiteDatabase db) {
+                            ^
+  symbol:   class SQLiteDatabase
+  location: class Database
+app/src/main/java/vip/thatiam/mml/Journal.java:1086: error: cannot find symbol
+    public void onCreate(SQLiteDatabase db) {
+                         ^
+  symbol:   class SQLiteDatabase
+  location: class Database
+app/src/main/java/vip/thatiam/mml/Journal.java:1101: error: cannot find symbol
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+                          ^
+  symbol:   class SQLiteDatabase
+  location: class Database
+app/src/main/java/vip/thatiam/mml/MainActivity.java:3: error: package android does not exist
+import android.Manifest;
+              ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:4: error: package android.app does not exist
+import android.app.Activity;
+                  ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:5: error: package android.app does not exist
+import android.app.AlertDialog;
+                  ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:6: error: package android.app does not exist
+import android.app.Notification;
+                  ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:7: error: package android.app does not exist
+import android.app.NotificationChannel;
+                  ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:8: error: package android.app does not exist
+import android.app.NotificationManager;
+                  ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:9: error: package android.app.role does not exist
+import android.app.role.RoleManager;
+                       ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:10: error: package android.content does not exist
+import android.content.ComponentName;
+                      ^
+100 errors
+only showing the first 100 errors, of 1007 total; use -Xmaxerrs if you would like to see more

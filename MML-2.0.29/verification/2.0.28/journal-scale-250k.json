@@ -1,0 +1,23 @@
+{
+  "rows": 250000,
+  "seed_seconds": 1.004,
+  "custom_tail": {
+    "rows": 101,
+    "median_ms": 1.97,
+    "max_ms": 2.665
+  },
+  "full_tail": {
+    "rows": 101,
+    "median_ms": 0.075,
+    "max_ms": 0.218
+  },
+  "query_plan": "(5, 0, 0, 'SEARCH entries USING INDEX entries_session (session=? AND row_id<?)')",
+  "shared_user_row": [
+    "Android share",
+    "shared_text",
+    "Shared text",
+    "remember this"
+  ],
+  "deleted_user_rows_remaining": 0,
+  "integrity": "ok"
+}

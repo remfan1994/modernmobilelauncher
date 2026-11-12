@@ -1,0 +1,2 @@
+javac exit is expected to be nonzero without Android framework classes.
+Common Java syntax-error markers: none

@@ -1,0 +1,57 @@
+MML 2.0.28 changes
+Prepared: 2026-11-11
+
+PURPOSE
+
+This is a navigation/app-picker usability pass. It does not add a new background subsystem or
+change the journal, notification, storage, or batching models.
+
+FULL-SCREEN NAVIGATION
+
+- App picker is now a normal full-screen MML screen rather than an AlertDialog.
+- Log detail is now a normal full-screen MML screen rather than an AlertDialog.
+- App info is a full-screen MML screen.
+- Notified logs is a full-screen MML screen.
+- Settings was already full-screen and remains so.
+- Transient confirmations, errors, and small choice prompts remain modal dialogs.
+- Back routes are explicit:
+  * App info -> App picker
+  * Settings -> App picker
+  * Notified logs -> Settings
+  * App picker or Log detail -> Home
+- Android Home returns directly to Home from any MML full-screen surface.
+
+APP PICKER
+
+- Find an app remains alone at the top.
+- Settings remains one full-width footer button at the bottom.
+- Normal tap saves one USER/app_launch row and launches that app.
+- Long-press opens App info and does not launch the app.
+- List view is reduced to one-line app names. Package/version text no longer consumes a second row.
+- Version lookup is deferred until App info instead of being performed for every app in the picker.
+
+APP INFO
+
+- Shows the full app label, package name, version name and version code.
+- Provides one full-width Android app settings (Force stop) button using Android's package-specific
+  App info page.
+
+BRICK VIEW
+
+- Settings > Display now contains App picker view: List/Brick.
+- There is no List/Brick control inside the app picker itself.
+- Brick view uses an auto-fit multi-column GridView.
+- Each brick shows at most the first seven Unicode code points of the app label, without ellipsis.
+- Long-press on a brick opens the same full App info screen.
+- Brick view uses compact text and 96 dp target column width so several apps can remain visible at
+  once even with MML's larger text settings.
+
+PRESERVED
+
+- Home remains the live log plus Make a log entry.
+- Date tap appends another Bloodguilt warning.
+- Checkered actionable-row borders remain dark-background/inversion-safe.
+- Full detail viewport remains actionable where the entry has a contextual action; long-press text
+  remains Android selection.
+- Notify/Unnotify, self-managing notification cards, same-app notification dedupe, durable restore,
+  rolling storage, stable text-log format, and the 250/1000 ms journal batching policy are unchanged.

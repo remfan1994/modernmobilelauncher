@@ -1,0 +1,14 @@
+== vip.thatiam.mml.BrightnessGestureTest ==
+BrightnessGestureTest: 40039 checks passed
+== vip.thatiam.mml.EntryHashTest ==
+EntryHashTest: 262 checks passed
+== vip.thatiam.mml.LogGroupsTest ==
+LogGroupsTest: 61 checks passed
+== vip.thatiam.mml.PlainTextLogCodecTest ==
+PlainTextLogCodecTest: 5 checks passed
+== vip.thatiam.mml.StoragePolicyTest ==
+StoragePolicyTest: 182 checks passed
+== vip.thatiam.mml.UserEntryTest ==
+UserEntryTest: 10 checks passed
+== LogDetailTest ==
+PASS log detail custom/full

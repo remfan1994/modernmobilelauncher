@@ -1,0 +1,7 @@
+BrightnessGestureTest: 40039 checks passed
+EntryHashTest: 262 checks passed
+UserEntryTest: 10 checks passed
+LogGroupsTest: 61 checks passed
+PASS log detail custom/full
+PlainTextLogCodecTest: 5 checks passed
+StoragePolicyTest: 175 checks passed

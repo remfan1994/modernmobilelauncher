@@ -1,0 +1,23 @@
+MML 2.0.29 changes
+==================
+Prepared: 2026-11-11
+
+PURPOSE
+
+One boundary-safety correction to the finished full-screen interaction model.
+
+BLOODGUILT WEB ACTION
+
+- Tapping the Bloodguilt warning detail surface no longer launches the browser immediately.
+- MML first asks: "Goes to internet. Continue?"
+- Continue returns MML internally to Home and then opens https://www.bloodguiltcurse.net/.
+- Cancel leaves the user in MML and performs no external action.
+- App-launch and live-notification detail actions are unchanged.
+
+PRESERVED
+
+- Full-screen Home/app picker/App info/log detail/Settings/Notified logs navigation.
+- List/Brick app picker and long-press App info.
+- Checkered actionable-row borders.
+- Durable Notify/Unnotify, Log/Remove notification actions, and same-package launcher dedupe.
+- Rolling app-data journal, stable version-1 plaintext logs, and 250 ms/1000 ms automatic batching.

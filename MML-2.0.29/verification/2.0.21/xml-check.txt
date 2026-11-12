@@ -1,0 +1,4 @@
+XML parse PASS
+app/src/androidTest/AndroidManifest.xml
+app/src/main/AndroidManifest.xml
+app/src/main/res/values/styles.xml

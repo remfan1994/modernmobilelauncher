@@ -1,0 +1,2 @@
+javac exit is expected without Android framework classes.
+Parser/delimiter/duplicate-definition markers: NONE

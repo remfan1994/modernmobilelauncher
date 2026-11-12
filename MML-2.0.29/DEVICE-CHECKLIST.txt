@@ -1,0 +1,168 @@
+MML 2.0.29 - Android 13 phone acceptance checklist
+
+UPGRADE / SETTINGS ACCESS
+
+1. Build/sign 2.0.29 with the same signing key and install it in place.
+2. Tap Make a log entry.
+Expected: a full-screen app picker opens. Find an app is at the top and one full-width Settings
+button spans the bottom.
+3. Tap Settings.
+Expected: full-screen MML Settings opens. Android Back returns to the app picker.
+4. Long-press the date and long-press Make a log entry.
+Expected: neither opens Settings.
+
+FULL-SCREEN NAVIGATION
+
+1. Open an ordinary log row.
+Expected: full-screen log detail, not a popup.
+2. Android Back from log detail.
+Expected: Home.
+3. Open app picker, long-press an app.
+Expected: full-screen App info. Back returns to the app picker with the prior search preserved.
+4. Open Settings > Logs > Notified logs.
+Expected: full-screen Notified logs. Back returns to Settings.
+5. From app picker, log detail, App info, Settings, and Notified logs, press Android Home.
+Expected: MML Home appears directly without an extra Back press.
+
+APP PICKER - LIST
+
+1. In Settings > Display choose App picker view: List.
+2. Return to app picker.
+Expected: one-line app names only; package/version text does not consume a second line.
+3. Tap RFS or another app.
+Expected: one USER/app_launch row commits before the app opens. Returning to MML exposes Home,
+not a stale app picker.
+4. Long-press an app.
+Expected: the app does not launch; App info opens instead.
+
+APP INFO
+
+1. Long-press RFS in the picker.
+Expected: full app name, package name, version name/code, and one Android app settings (Force stop)
+button.
+2. Tap Android app settings (Force stop).
+Expected: Android's package-specific App info page opens and contains the platform Force stop
+control where Android provides it.
+3. Return to MML.
+Expected: App info remains coherent; Back returns to the app picker.
+
+APP PICKER - BRICK
+
+1. In Settings > Display choose App picker view: Brick.
+2. Return to the picker.
+Expected: no List/Brick switch is visible in the picker itself.
+3. Confirm several compact cells fit horizontally and vertically at the configured MML text size.
+Expected: each brick shows at most the first seven characters/code points of the app name.
+4. Tap a brick.
+Expected: that app is logged and launched.
+5. Long-press a brick.
+Expected: App info opens; the app does not launch.
+6. Search while in Brick view.
+Expected: filtering still matches both displayed app names and package names.
+
+DATE / BLOODGUILT
+
+1. From Home, tap the reverse-video date once.
+Expected: a new Bloodguilt curse warning is appended to the journal.
+2. Open that row and tap its text or blank detail area.
+Expected: MML first asks "Goes to internet. Continue?" and the browser has not opened yet.
+3. Tap Cancel.
+Expected: remain in MML and no browser opens.
+4. Repeat and tap Continue.
+Expected: https://www.bloodguiltcurse.net/ opens in the browser.
+
+DETAIL ACTION / TEXT SELECTION
+
+1. Open an app-launch row and tap its detail text normally.
+Expected: the app launches on the first ordinary tap.
+2. Reopen it and tap blank dark space beneath its short text.
+Expected: the same app launches.
+3. Long-press the text and leave Android text selection active; tap once.
+Expected: selection dismissal/adjustment wins and the app does not launch on that tap.
+4. Confirm Delete and Notify/Unnotify remain at the bottom of the full-screen detail view.
+
+NOTIFICATION CARD ACTIONS
+
+1. Open a saved app-launch row and tap Notify.
+Expected: the button becomes Unnotify and the Home metadata later shows '/ notified'.
+2. Inspect the Android notification.
+Expected: it has Log and Remove actions and remains ongoing.
+3. Tap the notification body.
+Expected: the recorded app launches and the notification remains.
+4. Tap Log.
+Expected: MML opens the exact source log entry full-screen.
+5. Tap Remove.
+Expected: the notification disappears and the source journal row remains; reopening it shows Notify.
+
+SAME-APP DEDUPLICATION
+
+1. Create and Notify an RFS app-launch row.
+2. Later create a second RFS app-launch row and Notify the newer row.
+Expected: there is still only one RFS launcher notification. The newer row owns Notify state and
+the older row no longer shows '/ notified'.
+3. Keep a Technomatic or other app-launch notification present at the same time.
+Expected: the unrelated app notification remains unchanged.
+4. Delete an older, non-notified RFS launch row.
+Expected: the current RFS notification remains present.
+
+NOTIFIED LOGS MANAGER
+
+1. Notify several entries, then open Make a log entry > Settings > Logs > Notified logs.
+Expected: a full-screen manager lists current notified entries newest first.
+2. Tap a listed entry.
+Expected: its original full-screen log detail opens.
+3. Reopen Notified logs and use Remove on one entry.
+Expected: only that notification disappears; its log row remains.
+4. Use Clear all and confirm.
+Expected: all MML log-entry notifications disappear; journal rows remain.
+
+PROCESS RESTORE
+
+1. Notify two or more rows.
+2. Force-stop MML from Android App info, then explicitly relaunch MML.
+Expected: still-notified rows are reconstructed in the notification area.
+3. Previously removed, unnotified, or deleted rows must not return.
+
+SELF-NOTIFICATION / JOURNAL CLEANLINESS
+
+1. Notify an app-launch row and return Home.
+Expected: no MML 'Notification ... no text supplied / channel / group / flags' row is created.
+2. Use Log and Remove notification actions.
+Expected: those MML-owned control operations do not create journal noise.
+
+HOME VISUAL CUE
+
+1. Inspect app-launch, Bloodguilt, and eligible live-notification rows.
+Expected: dark background with two-gray checkered border.
+2. Inspect ordinary non-actionable rows.
+Expected: ordinary dark row without the action border.
+3. No actionable Home row should use a large reverse-video background.
+
+GROUPED ROWS
+
+Open a grouped display row.
+Expected: no synthetic Notify. Delete N entries may be offered with confirmation.
+
+LOG STORAGE / TEXT FORMAT
+
+1. Settings > Logs should show Log detail, App-data log limit, Log storage, Notified logs,
+and Check journal.
+2. Select a log folder and save records including multiline and Unicode text.
+Expected: app data remains the working journal and readable .log.txt copies are written to the
+selected folder.
+3. Verify TEXT-LOG-FORMAT.txt and that records still begin with MML LOG RECORD 1.
+
+ROLLING / LONG RUN
+
+1. Use a small practical app-data limit while generating automatic records.
+Expected: old automatic rows roll; USER rows and Bloodguilt warnings remain.
+2. Use MML as Home for 24-48 hours and check for battery/CPU/RAM regressions, capture pauses,
+crashes, or unexpected notification duplication.
+3. Verify automatic event batching remains visually prompt and deliberate USER writes are not
+held by the batching window.
+
+SCROLL REGRESSION
+
+Scroll up, return to the final row, and continue downward past the visual end.
+Expected: no tail jump/re-anchor. While reading away from the bottom, new events preserve the
+reading position and make Latest entries available.

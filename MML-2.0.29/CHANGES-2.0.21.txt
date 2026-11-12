@@ -1,0 +1,32 @@
+MML 2.0.21 changes
+Prepared: 2026-11-11
+
+SETTINGS / STORAGE WORDING
+
+- Restored the simple user model: MML keeps its working log in app data.
+- Settings now shows App-data log limit and Log storage instead of Automatic log storage
+  and Plaintext log folder/mirror terminology.
+- Log storage explains that a user may optionally choose a folder for readable .log.txt
+  copies. The app-data journal remains the working log.
+- Log-folder actions are Choose/Change log folder, Save to log folder now, Stop saving to
+  log folder, and Storage status.
+- The main Logs settings section no longer prints the full storage diagnostic paragraph.
+- Delete confirmation says copies already written to the log folder are not removed.
+
+DIALOG BUTTON SPACING
+
+- Native AlertDialog action buttons receive horizontal and vertical margins after the
+  dialog opens. Two-action rows such as Delete/Cancel and Open access/Cancel therefore
+  retain visible dark separation instead of merging into one light bar.
+- The Log storage panel itself uses stacked full-width choices and only one bottom Close
+  button.
+
+PRESERVED
+
+- 250 ms automatic-event quiet window, 1000 ms maximum batch age and immediate USER writes.
+- Rolling app-data journal with USER and mandatory warning protection.
+- Optional foreground-only readable .log.txt folder copies.
+- Unique Notify notifications, tap-time live notification actions, cleaned entry viewer,
+  narrowed Settings long-press and Home dismissal from the app picker.
+- One persistent system-bound notification listener; no polling, wake lock, network
+  permission, foreground collector, AlarmManager, JobScheduler or WorkManager loop.

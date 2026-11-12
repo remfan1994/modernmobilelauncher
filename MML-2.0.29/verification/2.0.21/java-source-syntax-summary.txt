@@ -1,0 +1,2 @@
+Syntax-oriented javac scan; Android framework classes are unavailable.
+No common Java syntax-error markers found.

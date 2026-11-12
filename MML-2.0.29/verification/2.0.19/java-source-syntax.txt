@@ -1,0 +1,375 @@
+app/src/main/java/vip/thatiam/mml/NotificationCapture.java:3: error: package android.app does not exist
+import android.app.NotificationManager;
+                  ^
+app/src/main/java/vip/thatiam/mml/NotificationCapture.java:4: error: package android.content does not exist
+import android.content.ComponentName;
+                      ^
+app/src/main/java/vip/thatiam/mml/NotificationCapture.java:5: error: package android.content does not exist
+import android.content.Context;
+                      ^
+app/src/main/java/vip/thatiam/mml/NotificationCapture.java:6: error: package android.content does not exist
+import android.content.SharedPreferences;
+                      ^
+app/src/main/java/vip/thatiam/mml/NotificationCapture.java:7: error: package android.os does not exist
+import android.os.Handler;
+                 ^
+app/src/main/java/vip/thatiam/mml/NotificationCapture.java:8: error: package android.os does not exist
+import android.os.Looper;
+                 ^
+app/src/main/java/vip/thatiam/mml/NotificationCapture.java:9: error: package android.service.notification does not exist
+import android.service.notification.NotificationListenerService;
+                                   ^
+app/src/main/java/vip/thatiam/mml/NotificationCapture.java:10: error: package android.service.notification does not exist
+import android.service.notification.StatusBarNotification;
+                                   ^
+app/src/main/java/vip/thatiam/mml/NotificationCapture.java:17: error: cannot find symbol
+public class NotificationCapture extends NotificationListenerService {
+                                         ^
+  symbol: class NotificationListenerService
+app/src/main/java/vip/thatiam/mml/NotificationCapture.java:19: error: cannot find symbol
+  private static final Handler reconnectHandler = new Handler(Looper.getMainLooper());
+                       ^
+  symbol:   class Handler
+  location: class NotificationCapture
+app/src/main/java/vip/thatiam/mml/NotificationCapture.java:23: error: cannot find symbol
+  private final Handler main = new Handler(Looper.getMainLooper());
+                ^
+  symbol:   class Handler
+  location: class NotificationCapture
+app/src/main/java/vip/thatiam/mml/NotificationCapture.java:24: error: cannot find symbol
+  private SharedPreferences preferences;
+          ^
+  symbol:   class SharedPreferences
+  location: class NotificationCapture
+app/src/main/java/vip/thatiam/mml/NotificationCapture.java:25: error: cannot find symbol
+  private StatusBarNotification[] snapshot;
+          ^
+  symbol:   class StatusBarNotification
+  location: class NotificationCapture
+app/src/main/java/vip/thatiam/mml/NotificationCapture.java:93: error: cannot find symbol
+  public void onNotificationPosted(StatusBarNotification notification) {
+                                   ^
+  symbol:   class StatusBarNotification
+  location: class NotificationCapture
+app/src/main/java/vip/thatiam/mml/NotificationCapture.java:100: error: cannot find symbol
+      StatusBarNotification notification, RankingMap rankings, int reason) {
+      ^
+  symbol:   class StatusBarNotification
+  location: class NotificationCapture
+app/src/main/java/vip/thatiam/mml/NotificationCapture.java:100: error: cannot find symbol
+      StatusBarNotification notification, RankingMap rankings, int reason) {
+                                          ^
+  symbol:   class RankingMap
+  location: class NotificationCapture
+app/src/main/java/vip/thatiam/mml/NotificationCapture.java:105: error: cannot find symbol
+  private void markChanged(StatusBarNotification notification) {
+                           ^
+  symbol:   class StatusBarNotification
+  location: class NotificationCapture
+app/src/main/java/vip/thatiam/mml/NotificationCapture.java:111: error: cannot find symbol
+  private void capture(StatusBarNotification notification, String type, int reason) {
+                       ^
+  symbol:   class StatusBarNotification
+  location: class NotificationCapture
+app/src/main/java/vip/thatiam/mml/NotificationCapture.java:257: error: cannot find symbol
+  public static void requestReconnect(Context context) {
+                                      ^
+  symbol:   class Context
+  location: class NotificationCapture
+app/src/main/java/vip/thatiam/mml/NotificationCapture.java:295: error: cannot find symbol
+    final SharedPreferences preferences;
+          ^
+  symbol:   class SharedPreferences
+  location: class Diagnostics
+app/src/main/java/vip/thatiam/mml/NotificationCapture.java:296: error: cannot find symbol
+    final Handler handler = new Handler(Looper.getMainLooper());
+          ^
+  symbol:   class Handler
+  location: class Diagnostics
+app/src/main/java/vip/thatiam/mml/NotificationCapture.java:303: error: cannot find symbol
+    Diagnostics(SharedPreferences preferences) {
+                ^
+  symbol:   class SharedPreferences
+  location: class Diagnostics
+app/src/main/java/vip/thatiam/mml/Ui.java:3: error: package android.app does not exist
+import android.app.Activity;
+                  ^
+app/src/main/java/vip/thatiam/mml/Ui.java:4: error: package android.content.res does not exist
+import android.content.res.ColorStateList;
+                          ^
+app/src/main/java/vip/thatiam/mml/Ui.java:5: error: package android.graphics does not exist
+import android.graphics.Typeface;
+                       ^
+app/src/main/java/vip/thatiam/mml/Ui.java:6: error: package android.graphics.drawable does not exist
+import android.graphics.drawable.ColorDrawable;
+                                ^
+app/src/main/java/vip/thatiam/mml/Ui.java:7: error: package android.graphics.drawable does not exist
+import android.graphics.drawable.GradientDrawable;
+                                ^
+app/src/main/java/vip/thatiam/mml/Ui.java:8: error: package android.graphics.drawable does not exist
+import android.graphics.drawable.StateListDrawable;
+                                ^
+app/src/main/java/vip/thatiam/mml/Ui.java:9: error: package android.view does not exist
+import android.view.Gravity;
+                   ^
+app/src/main/java/vip/thatiam/mml/Ui.java:10: error: package android.view does not exist
+import android.view.View;
+                   ^
+app/src/main/java/vip/thatiam/mml/Ui.java:11: error: package android.widget does not exist
+import android.widget.Button;
+                     ^
+app/src/main/java/vip/thatiam/mml/Ui.java:12: error: package android.widget does not exist
+import android.widget.EditText;
+                     ^
+app/src/main/java/vip/thatiam/mml/Ui.java:13: error: package android.widget does not exist
+import android.widget.LinearLayout;
+                     ^
+app/src/main/java/vip/thatiam/mml/Ui.java:14: error: package android.widget does not exist
+import android.widget.ListView;
+                     ^
+app/src/main/java/vip/thatiam/mml/Ui.java:15: error: package android.widget does not exist
+import android.widget.TextView;
+                     ^
+app/src/main/java/vip/thatiam/mml/Ui.java:26: error: cannot find symbol
+  final Activity activity;
+        ^
+  symbol:   class Activity
+  location: class Ui
+app/src/main/java/vip/thatiam/mml/Ui.java:36: error: cannot find symbol
+  Ui(Activity activity) {
+     ^
+  symbol:   class Activity
+  location: class Ui
+app/src/main/java/vip/thatiam/mml/Ui.java:45: error: cannot find symbol
+  LinearLayout column() {
+  ^
+  symbol:   class LinearLayout
+  location: class Ui
+app/src/main/java/vip/thatiam/mml/Ui.java:52: error: cannot find symbol
+  LinearLayout row() {
+  ^
+  symbol:   class LinearLayout
+  location: class Ui
+app/src/main/java/vip/thatiam/mml/Ui.java:59: error: cannot find symbol
+  LinearLayout listRow() {
+  ^
+  symbol:   class LinearLayout
+  location: class Ui
+app/src/main/java/vip/thatiam/mml/Ui.java:65: error: cannot find symbol
+  void bindListRow(LinearLayout row, boolean outlined) {
+                   ^
+  symbol:   class LinearLayout
+  location: class Ui
+app/src/main/java/vip/thatiam/mml/Ui.java:77: error: cannot find symbol
+  void styleList(ListView list) {
+                 ^
+  symbol:   class ListView
+  location: class Ui
+app/src/main/java/vip/thatiam/mml/Ui.java:86: error: cannot find symbol
+  TextView text(String value, float sp) {
+  ^
+  symbol:   class TextView
+  location: class Ui
+app/src/main/java/vip/thatiam/mml/Ui.java:97: error: cannot find symbol
+  void reverse(TextView view) {
+               ^
+  symbol:   class TextView
+  location: class Ui
+app/src/main/java/vip/thatiam/mml/Ui.java:102: error: cannot find symbol
+  TextView heading(String value) {
+  ^
+  symbol:   class TextView
+  location: class Ui
+app/src/main/java/vip/thatiam/mml/Ui.java:108: error: cannot find symbol
+  void styleMeta(TextView view) {
+                 ^
+  symbol:   class TextView
+  location: class Ui
+app/src/main/java/vip/thatiam/mml/Ui.java:114: error: cannot find symbol
+  void selectable(TextView view) {
+                  ^
+  symbol:   class TextView
+  location: class Ui
+app/src/main/java/vip/thatiam/mml/Ui.java:119: error: cannot find symbol
+  private void tintSelectionHandles(TextView view, int color) {
+                                    ^
+  symbol:   class TextView
+  location: class Ui
+app/src/main/java/vip/thatiam/mml/Ui.java:127: error: cannot find symbol
+  Button button(String label, Runnable action) {
+  ^
+  symbol:   class Button
+  location: class Ui
+app/src/main/java/vip/thatiam/mml/Ui.java:148: error: cannot find symbol
+  EditText input(String hint) {
+  ^
+  symbol:   class EditText
+  location: class Ui
+app/src/main/java/vip/thatiam/mml/Ui.java:172: error: cannot find symbol
+  GradientDrawable outline() {
+  ^
+  symbol:   class GradientDrawable
+  location: class Ui
+app/src/main/java/vip/thatiam/mml/Ui.java:176: error: cannot find symbol
+  StateListDrawable rowBackground(boolean outlined) {
+  ^
+  symbol:   class StateListDrawable
+  location: class Ui
+app/src/main/java/vip/thatiam/mml/Ui.java:184: error: cannot find symbol
+  private GradientDrawable fill(int color, int border, boolean outlined) {
+          ^
+  symbol:   class GradientDrawable
+  location: class Ui
+app/src/main/java/vip/thatiam/mml/Ui.java:191: error: cannot find symbol
+  ColorStateList textColors(int ordinary) {
+  ^
+  symbol:   class ColorStateList
+  location: class Ui
+app/src/main/java/vip/thatiam/mml/Ui.java:203: error: cannot find symbol
+  private ColorStateList reverseTextColors() {
+          ^
+  symbol:   class ColorStateList
+  location: class Ui
+app/src/main/java/vip/thatiam/mml/Ui.java:217: error: cannot find symbol
+  void equal(LinearLayout row, View v) {
+             ^
+  symbol:   class LinearLayout
+  location: class Ui
+app/src/main/java/vip/thatiam/mml/Ui.java:217: error: cannot find symbol
+  void equal(LinearLayout row, View v) {
+                               ^
+  symbol:   class View
+  location: class Ui
+app/src/main/java/vip/thatiam/mml/Ui.java:221: error: cannot find symbol
+  void bold(TextView v) {
+            ^
+  symbol:   class TextView
+  location: class Ui
+app/src/main/java/vip/thatiam/mml/MainActivity.java:3: error: package android does not exist
+import android.Manifest;
+              ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:4: error: package android.app does not exist
+import android.app.Activity;
+                  ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:5: error: package android.app does not exist
+import android.app.AlertDialog;
+                  ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:6: error: package android.app does not exist
+import android.app.Notification;
+                  ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:7: error: package android.app does not exist
+import android.app.NotificationChannel;
+                  ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:8: error: package android.app does not exist
+import android.app.NotificationManager;
+                  ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:9: error: package android.app.role does not exist
+import android.app.role.RoleManager;
+                       ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:10: error: package android.content does not exist
+import android.content.ComponentName;
+                      ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:11: error: package android.content does not exist
+import android.content.Context;
+                      ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:12: error: package android.content does not exist
+import android.content.Intent;
+                      ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:13: error: package android.content does not exist
+import android.content.SharedPreferences;
+                      ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:14: error: package android.content.pm does not exist
+import android.content.pm.ApplicationInfo;
+                         ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:15: error: package android.content.pm does not exist
+import android.content.pm.PackageInfo;
+                         ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:16: error: package android.content.pm does not exist
+import android.content.pm.PackageManager;
+                         ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:17: error: package android.content.pm does not exist
+import android.content.pm.ResolveInfo;
+                         ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:18: error: package android.graphics does not exist
+import android.graphics.Insets;
+                       ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:19: error: package android.graphics does not exist
+import android.graphics.Typeface;
+                       ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:20: error: package android.graphics.drawable does not exist
+import android.graphics.drawable.ColorDrawable;
+                                ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:21: error: package android.net does not exist
+import android.net.Uri;
+                  ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:22: error: package android.os does not exist
+import android.os.Bundle;
+                 ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:23: error: package android.os does not exist
+import android.os.CancellationSignal;
+                 ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:24: error: package android.os does not exist
+import android.os.Handler;
+                 ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:25: error: package android.os does not exist
+import android.os.Looper;
+                 ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:26: error: package android.os does not exist
+import android.os.OperationCanceledException;
+                 ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:27: error: package android.provider does not exist
+import android.provider.Settings;
+                       ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:28: error: package android.text does not exist
+import android.text.Editable;
+                   ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:29: error: package android.text does not exist
+import android.text.SpannableStringBuilder;
+                   ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:30: error: package android.text does not exist
+import android.text.Spanned;
+                   ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:31: error: package android.text.style does not exist
+import android.text.style.RelativeSizeSpan;
+                         ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:32: error: package android.text.style does not exist
+import android.text.style.StyleSpan;
+                         ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:33: error: package android.text.style does not exist
+import android.text.style.TypefaceSpan;
+                         ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:34: error: package android.text does not exist
+import android.text.TextWatcher;
+                   ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:35: error: package android.view does not exist
+import android.view.GestureDetector;
+                   ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:36: error: package android.view does not exist
+import android.view.Gravity;
+                   ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:37: error: package android.view does not exist
+import android.view.MotionEvent;
+                   ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:38: error: package android.view does not exist
+import android.view.View;
+                   ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:39: error: package android.view does not exist
+import android.view.ViewGroup;
+                   ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:40: error: package android.view does not exist
+import android.view.WindowInsets;
+                   ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:41: error: package android.view does not exist
+import android.view.WindowInsetsController;
+                   ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:42: error: package android.view does not exist
+import android.view.WindowManager;
+                   ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:43: error: package android.view.inputmethod does not exist
+import android.view.inputmethod.InputMethodManager;
+                               ^
+app/src/main/java/vip/thatiam/mml/MainActivity.java:44: error: package android.widget does not exist
+import android.widget.AbsListView;
+                     ^
+100 errors
+only showing the first 100 errors, of 981 total; use -Xmaxerrs if you would like to see more

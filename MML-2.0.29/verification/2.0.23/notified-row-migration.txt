@@ -1,0 +1,4 @@
+before: (1, 'app-uid', 1000, 'App launch: RFS')
+after: (1, 'app-uid', 1000, 'App launch: RFS', 1700000000000)
+row_count: 1
+integrity: ok

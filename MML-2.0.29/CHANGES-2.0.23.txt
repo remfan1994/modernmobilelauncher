@@ -1,0 +1,34 @@
+MML 2.0.23 changes
+Prepared: 2026-11-11
+
+NOTIFY WORKFLOW
+
+- MML pushed-log notifications (notification ID 7013, UID-tagged) are excluded from MML's
+  notification capture path. Posting one no longer generates a second top-level Home row.
+- A single saved journal row gains notified_ms when Notify succeeds. The row ID, UID, event
+  timestamp, source, type, title and body are unchanged, so it remains in its original place.
+- Entry detail shows the extension as small metadata: Notification: posted YYYY-MM-DD HH:mm:ss.
+- Re-notifying the same saved row updates notified_ms and the existing UID-tagged Android
+  notification rather than inserting another journal event.
+- Group notifications remain synthetic notification copies and do not pretend to be one saved row.
+
+PERSISTENT PUSHED NOTIFICATIONS
+
+- Pushed log notifications are setOngoing(true) and setAutoCancel(false).
+- Tapping an app-launch notification launches the recorded app without dismissing the notification.
+- This is persistence across action use, not a new boot/background subsystem. MML still has no boot
+  receiver and Android can remove notifications for normal system lifecycle reasons.
+
+DATABASE
+
+- Lean journal schema advances from version 4 to 5 with one notified_ms INTEGER column.
+- Upgrade from version 4 is an ALTER TABLE only. Older supported upgrades retain the prior
+  Notes/Archive cleanup and then add notified_ms.
+- The notification extension is an UPDATE of the original UID row, not a new event insert.
+
+PRESERVED
+
+- 2.0.22 reverse-video action cue, compact provenance and stable version-1 text export.
+- 2.0.21 storage/settings cleanup and dialog spacing.
+- 2.0.20 250 ms automatic batching / 1000 ms hard batch age.
+- 2.0.19 rolling automatic-history retention and unique UID-tagged pushed notifications.

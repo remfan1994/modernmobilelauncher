@@ -1,0 +1,3 @@
+Android framework classes unavailable: expected unresolved android.* diagnostics.
+Common Java syntax diagnostics: none
+Raw javac diagnostics lines: 375

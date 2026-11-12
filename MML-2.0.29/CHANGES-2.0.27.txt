@@ -1,0 +1,54 @@
+MML 2.0.27 changes
+Prepared: 2026-11-11
+
+SETTINGS ACCESS
+
+- Settings now has one deliberate entry point: the full-width Settings button at the
+  bottom of the app picker.
+- Find an app remains alone at the top of the picker.
+- Removed Settings from date long-press, Make a log entry long-press, and the Android
+  notification area.
+- On upgrade MML cancels the obsolete persistent Settings notification and removes its
+  old channel.
+
+DATE / BLOODGUILT WARNING
+
+- A normal tap on the reverse-video date writes another Bloodguilt curse warning into
+  the Home journal.
+- The Bloodguilt warning detail action still opens https://www.bloodguiltcurse.net/.
+
+NOTIFICATION SELF-MANAGEMENT
+
+- Every MML log-entry notification has two actions:
+  Log    - opens the exact source log entry in MML.
+  Remove - clears that entry's durable Notify state and removes the Android card without
+           opening MML.
+- The notification's main tap keeps its original purpose. An app-launch notification
+  still launches the recorded app and remains present.
+- Settings > Logs now has Notified logs. This shows the current notified entries, lets a
+  user open the source row or Remove one entry, and provides Clear all with confirmation.
+- The old top-level Settings > Clear notifications row is removed; Clear all belongs in
+  Notified logs.
+- Home metadata adds a small '/ notified' marker to rows currently represented in the
+  notification area.
+
+APP-LAUNCH NOTIFICATION DEDUPLICATION
+
+- There is at most one durable app-launch notification per package.
+- Notifying a newer RFS launch row transfers the durable notified state from an older RFS
+  launch row to the newer one.
+- App-launch Android notification tags are package-derived, so the newer card updates the
+  existing launcher card instead of creating duplicate RFS launcher cards.
+- Unrelated app-launch notifications and ordinary notified log entries remain independent.
+- Deleting any journal row now reconciles Android cards from durable journal state; deleting
+  an old RFS launch row cannot accidentally cancel a newer RFS notification.
+
+PRESERVED
+
+- Notify/Unnotify remains reversible on the source entry.
+- Still-notified rows are reconstructed after process death or force-stop followed by relaunch.
+- MML's own notifications do not re-enter the journal.
+- Grouped display rows have no synthetic Notify.
+- Actionable Home rows keep the dark background and two-gray checkered border.
+- Detail blank-space taps use the same contextual action as detail text.
+- The stable version-1 .log.txt format is unchanged.

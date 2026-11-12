@@ -1,0 +1,7 @@
+rolling page reuse: PASS
+removed automatic rows: 32768
+live bytes before: 112021504 after: 66314240
+freelist pages before: 0 after: 11159
+physical main db bytes before: 112021504 after: 112021504
+USER rows preserved: 80 warnings preserved: 8
+integrity: ok

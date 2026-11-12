@@ -1,0 +1,69 @@
+MML 2.0.29 verification
+=======================
+Prepared: 2026-11-11
+Baseline: MML 2.0.28 source
+Status: SOURCE CANDIDATE. Host/source checks passed; Android framework/device acceptance remains external.
+
+SCOPE
+
+2.0.29 changes one external-action boundary: the Bloodguilt warning detail action now requires an explicit
+"Goes to internet. Continue?" confirmation before launching the browser. All other 2.0.28 UI, notification,
+storage, batching, and text-log behavior is unchanged.
+
+POLICY TESTS
+
+Command:
+  python3 -m unittest discover -s tools -p 'test_*.py' -v
+
+Result: 78 tests passed.
+
+The new policy check requires the Bloodguilt detail surface to route through the confirmation helper and
+forbids direct openWeb() invocation from that detail-action branch. Continue/Cancel and the target URL are
+checked explicitly.
+
+Evidence: verification/2.0.29/python-policy-tests.txt
+
+PURE-JAVA HOST CHECKS
+
+- BrightnessGestureTest: 40,039 checks passed.
+- EntryHashTest: 262 checks passed.
+- StoragePolicyTest: 182 checks passed.
+- LogDetailTest: PASS.
+- LogGroupsTest: 61 checks passed.
+- PlainTextLogCodecTest: 19 checks passed.
+- UserEntryTest: 10 checks passed.
+- AutomaticBatchWindowTest: 10 checks passed.
+
+Evidence: verification/2.0.29/core-host-tests.txt
+
+250,000-ROW JOURNAL FIXTURE
+
+- Custom tail: 101 rows; median 1.921 ms; maximum 2.147 ms.
+- Full tail: 101 rows; median 0.077 ms; maximum 0.164 ms.
+- Query plan used entries_session (session=? AND row_id<?).
+- USER/shared_text insertion/read/delete passed.
+- PRAGMA integrity_check: ok.
+
+These are host SQLite timings, not Android phone CPU/battery benchmarks.
+Evidence: verification/2.0.29/journal-scale-250k.json
+
+JAVA / XML SOURCE CHECKS
+
+All production Java files were passed through javac parsing. Android framework classes are not installed in
+this workspace, so Android API type checking cannot complete. The compiler output contained no scanned
+parser/delimiter/duplicate-definition error markers.
+
+XML parse passed for the production manifest, styles.xml, and androidTest manifest.
+
+Evidence:
+- verification/2.0.29/java-source-javac.txt
+- verification/2.0.29/java-source-syntax-summary.txt
+- verification/2.0.29/xml-check.txt
+
+NOT VERIFIED HERE
+
+- Android SDK 35 resource/API compilation, DEX, APK generation, signing, install, or instrumentation.
+- Physical Android 13 AlertDialog rendering and actual browser handoff after Continue.
+- Physical-phone long-duration battery, CPU, RAM, thermal, or notification-listener behavior.
+
+See DEVICE-CHECKLIST.txt for device acceptance.

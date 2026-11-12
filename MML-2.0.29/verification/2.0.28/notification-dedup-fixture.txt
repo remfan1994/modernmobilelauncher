@@ -1,0 +1,7 @@
+App-launch notification dedupe fixture
+
+older RFS notified_ms: 0
+newer RFS notified_ms: 999
+Technomatic notified_ms: 222
+unrelated ordinary notified_ms: 333
+PRAGMA integrity_check: ok

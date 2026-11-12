@@ -1,0 +1,3 @@
+javac status is expected nonzero without android.jar.
+syntax-like diagnostic markers: []
+production java files: 20

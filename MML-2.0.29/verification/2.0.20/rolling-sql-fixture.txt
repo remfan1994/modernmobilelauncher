@@ -1,0 +1,2 @@
+rolling SQL fixture: PASS; deleted 16; USER and warning preserved; rows above mirror receipt 20 preserved
+integrity: ok

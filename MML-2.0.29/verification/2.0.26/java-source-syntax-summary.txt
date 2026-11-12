@@ -1,0 +1,2 @@
+javac exit: 1 (expected nonzero without Android framework classes)
+No Java syntax/constructor-arity error markers found.

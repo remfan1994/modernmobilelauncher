@@ -1,0 +1,4 @@
+result: [('note', 400), ('rfs-new', 500), ('rfs-old', 0), ('tm', 300)]
+expected: [('note', 400), ('rfs-new', 500), ('rfs-old', 0), ('tm', 300)]
+pass: True
+integrity: ok

@@ -1,0 +1,16 @@
+=== LogDetailTest ===
+PASS log detail custom/full
+=== BrightnessGestureTest ===
+BrightnessGestureTest: 40039 checks passed
+=== EntryHashTest ===
+EntryHashTest: 262 checks passed
+=== StoragePolicyTest ===
+StoragePolicyTest: 182 checks passed
+=== LogGroupsTest ===
+LogGroupsTest: 61 checks passed
+=== PlainTextLogCodecTest ===
+PlainTextLogCodecTest: 19 checks passed
+=== UserEntryTest ===
+UserEntryTest: 10 checks passed
+=== AutomaticBatchWindowTest ===
+AutomaticBatchWindowTest: 10 checks passed

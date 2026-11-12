@@ -1,0 +1,2 @@
+PASS app/src/main/AndroidManifest.xml
+PASS app/src/main/res/values/styles.xml

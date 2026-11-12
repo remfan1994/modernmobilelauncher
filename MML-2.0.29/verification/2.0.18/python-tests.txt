@@ -1,0 +1,62 @@
+test_fallback_probe_failure_remains_failure (test_build_apk.Java8OptionsTest.test_fallback_probe_failure_remains_failure) ... plaintext log policy: PASS
+Compiler has no Java 8 platform signatures; using the official Android android.jar and core-lambda-stubs.jar bootclasspath with Java 8 source and bytecode targets.
+ok
+test_missing_lambda_companion_does_not_use_host_java_apis (test_build_apk.Java8OptionsTest.test_missing_lambda_companion_does_not_use_host_java_apis) ... ok
+test_missing_signatures_uses_android_bootclasspath (test_build_apk.Java8OptionsTest.test_missing_signatures_uses_android_bootclasspath) ... Compiler has no Java 8 platform signatures; using the official Android android.jar and core-lambda-stubs.jar bootclasspath with Java 8 source and bytecode targets.
+ok
+test_normal_jdk_keeps_release_8 (test_build_apk.Java8OptionsTest.test_normal_jdk_keeps_release_8) ... ok
+test_unrelated_errors_do_not_fall_back (test_build_apk.Java8OptionsTest.test_unrelated_errors_do_not_fall_back) ... error: cannot find symbol
+java.lang.OutOfMemoryError
+permission denied
+ok
+test_android_text_share_target (test_compose_notification_policy.EntryActionPolicyTest.test_android_text_share_target) ... ok
+test_detail_surface_is_selectable_and_contextual (test_compose_notification_policy.EntryActionPolicyTest.test_detail_surface_is_selectable_and_contextual) ... ok
+test_no_toasts_or_custom_clipboard_copy (test_compose_notification_policy.EntryActionPolicyTest.test_no_toasts_or_custom_clipboard_copy) ... ok
+test_notification_copy_can_post_any_log_entry (test_compose_notification_policy.EntryActionPolicyTest.test_notification_copy_can_post_any_log_entry) ... ok
+test_current_schema_is_log_only (test_lean_schema_policy.LeanSchemaPolicyTest.test_current_schema_is_log_only) ... ok
+test_database_version_is_four (test_lean_schema_policy.LeanSchemaPolicyTest.test_database_version_is_four) ... ok
+test_upgrade_removes_old_note_archive_machinery (test_lean_schema_policy.LeanSchemaPolicyTest.test_upgrade_removes_old_note_archive_machinery) ... ok
+test_custom_screen_has_spaced_cancel_save (test_log_detail_policy.LogDetailPolicyTest.test_custom_screen_has_spaced_cancel_save) ... ok
+test_filter_is_query_level (test_log_detail_policy.LogDetailPolicyTest.test_filter_is_query_level) ... ok
+test_only_custom_and_full (test_log_detail_policy.LogDetailPolicyTest.test_only_custom_and_full) ... ok
+test_settings_controls_detail_not_date_header (test_log_detail_policy.LogDetailPolicyTest.test_settings_controls_detail_not_date_header) ... ok
+test_user_entries_and_warning_are_always_visible_in_custom (test_log_detail_policy.LogDetailPolicyTest.test_user_entries_and_warning_are_always_visible_in_custom) ... ok
+test_detail_view_has_visual_hierarchy (test_log_ui_policy.LogUiPolicyTest.test_detail_view_has_visual_hierarchy) ... ok
+test_live_tail_uses_stable_index_math (test_log_ui_policy.LogUiPolicyTest.test_live_tail_uses_stable_index_math) ... ok
+test_log_row_visual_order (test_log_ui_policy.LogUiPolicyTest.test_log_row_visual_order) ... ok
+test_native_widgets (test_log_ui_policy.LogUiPolicyTest.test_native_widgets) ... ok
+test_two_dp_dividers_and_reverse_date (test_log_ui_policy.LogUiPolicyTest.test_two_dp_dividers_and_reverse_date) ... ok
+test_fixed_normal_and_reverse_video_pairings (test_palette_policy.PalettePolicyTest.test_fixed_normal_and_reverse_video_pairings) ... ok
+test_no_black_or_white_ui_literal (test_palette_policy.PalettePolicyTest.test_no_black_or_white_ui_literal) ... ok
+test_only_two_named_palette_values (test_palette_policy.PalettePolicyTest.test_only_two_named_palette_values) ... ok
+test_theme_is_not_user_switchable (test_palette_policy.PalettePolicyTest.test_theme_is_not_user_switchable) ... ok
+test_theme_resources_only_use_the_two_grays (test_palette_policy.PalettePolicyTest.test_theme_resources_only_use_the_two_grays) ... ok
+test_no_background_framework_bloat (test_resource_diet_policy.ResourceDietPolicyTest.test_no_background_framework_bloat) ... ok
+test_optional_workers_time_out (test_resource_diet_policy.ResourceDietPolicyTest.test_optional_workers_time_out) ... ok
+test_plaintext_mirror_is_debounced (test_resource_diet_policy.ResourceDietPolicyTest.test_plaintext_mirror_is_debounced) ... ok
+test_writer_is_background_priority_and_burst_coalesced (test_resource_diet_policy.ResourceDietPolicyTest.test_writer_is_background_priority_and_burst_coalesced) ... ok
+test_app_launch_is_saved_then_opened (test_simple_home_policy.SimpleHomePolicyTest.test_app_launch_is_saved_then_opened) ... ok
+test_app_picker_is_immediate_single_selection (test_simple_home_policy.SimpleHomePolicyTest.test_app_picker_is_immediate_single_selection) ... ok
+test_home_dismisses_app_picker (test_simple_home_policy.SimpleHomePolicyTest.test_home_dismisses_app_picker) ... ok
+test_home_is_log_plus_one_action (test_simple_home_policy.SimpleHomePolicyTest.test_home_is_log_plus_one_action) ... ok
+test_notes_archive_and_composer_are_absent (test_simple_home_policy.SimpleHomePolicyTest.test_notes_archive_and_composer_are_absent) ... ok
+test_one_background_service_only (test_simple_home_policy.SimpleHomePolicyTest.test_one_background_service_only) ... ok
+test_only_home_and_settings_screens (test_simple_home_policy.SimpleHomePolicyTest.test_only_home_and_settings_screens) ... ok
+test_scrolling_fix_is_preserved (test_simple_home_policy.SimpleHomePolicyTest.test_scrolling_fix_is_preserved) ... ok
+test_share_text_is_a_plain_user_log_entry (test_simple_home_policy.SimpleHomePolicyTest.test_share_text_is_a_plain_user_log_entry) ... ok
+test_crash_recorder (test_stability_policy.StabilityPolicyTest.test_crash_recorder) ... ok
+test_dialogs_guard_window_lifecycle (test_stability_policy.StabilityPolicyTest.test_dialogs_guard_window_lifecycle) ... ok
+test_journal_has_bounded_retry_and_observer_isolation (test_stability_policy.StabilityPolicyTest.test_journal_has_bounded_retry_and_observer_isolation) ... ok
+test_only_listener_persists (test_stability_policy.StabilityPolicyTest.test_only_listener_persists) ... ok
+test_optional_history_is_foreground_only (test_stability_policy.StabilityPolicyTest.test_optional_history_is_foreground_only) ... ok
+test_plaintext_mirror_is_foreground_bounded (test_stability_policy.StabilityPolicyTest.test_plaintext_mirror_is_foreground_bounded) ... ok
+test_adaptive_mode_can_be_restored_explicitly (test_system_brightness_policy.SystemBrightnessPolicyTest.test_adaptive_mode_can_be_restored_explicitly) ... ok
+test_log_gesture_writes_system_brightness (test_system_brightness_policy.SystemBrightnessPolicyTest.test_log_gesture_writes_system_brightness) ... ok
+test_old_window_override_is_migrated_away (test_system_brightness_policy.SystemBrightnessPolicyTest.test_old_window_override_is_migrated_away) ... ok
+test_window_never_owns_brightness (test_system_brightness_policy.SystemBrightnessPolicyTest.test_window_never_owns_brightness) ... ok
+test_write_settings_special_access_is_declared (test_system_brightness_policy.SystemBrightnessPolicyTest.test_write_settings_special_access_is_declared) ... ok
+
+----------------------------------------------------------------------
+Ran 51 tests in 0.086s
+
+OK
