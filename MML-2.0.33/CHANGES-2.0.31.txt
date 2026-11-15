@@ -1,0 +1,22 @@
+MML 2.0.31 changes
+==================
+
+App-info wording
+----------------
+- Renamed the app-info button from "Android app settings (Force stop)" to "Open Android App info".
+- The button only opens Android's package App info page. It does not force-stop the selected app.
+- README wording now makes clear that Force stop is an Android-owned control on the destination page.
+
+Android 13 build target
+-----------------------
+- MML now builds directly against Android API 33: compileSdk 33, minSdk 33, targetSdk 33.
+- The only API-34-specific notification-action option is reached reflectively at runtime on Android 14+
+  so it does not force the project to compile against API 34/35.
+- The manual build helper now requires Android SDK Platform 33 and auto-selects an installed build-tools
+  directory containing aapt2, d8, zipalign and apksigner.
+- Android NDK 30.0.14904198 is not required or used; MML contains no native C/C++ code.
+
+Documentation correction
+------------------------
+- Screen/lock help now distinguishes retained UsageEvents from the independently captured USER_PRESENT
+  DEVICE event without implying that 2.0.31 directly captures new SCREEN_ON/SCREEN_OFF broadcasts.

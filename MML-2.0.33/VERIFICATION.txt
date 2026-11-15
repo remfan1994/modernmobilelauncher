@@ -1,0 +1,31 @@
+MML 2.0.33 verification
+=======================
+
+Purpose
+-------
+2.0.33 fixes Android resource linking when compiling against API 33. MML 2.0.32
+still contained android:windowOptOutEdgeToEdgeEnforcement in styles.xml; that is
+an API-35 framework resource and cannot be resolved by Android 13 / API 33's
+android.jar. The item has been removed and a regression policy check now rejects it.
+
+Checks executed
+---------------
+- Python source/policy suite: 87 tests passed.
+- Pure-Java host tests passed: BrightnessGesture, EntryHash, StoragePolicy,
+  LogGroups, PlainTextLogCodec, UserEntry, AutomaticBatchWindow, SettingsHelp,
+  and LogDetail.
+- All project XML files parse successfully.
+- Static API-35 resource scan confirms windowOptOutEdgeToEdgeEnforcement is absent.
+
+Build target
+------------
+- compileSdk 33
+- minSdk 33
+- targetSdk 33
+- No Android NDK is used.
+
+Environment limit
+-----------------
+This workspace does not contain Android SDK Platform 33 / android.jar or aapt2,
+so an actual Gradle resource-link/APK build was not executed here. The correction
+is specifically at the resource name that caused API-33 aapt2 linking to fail.

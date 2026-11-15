@@ -1,0 +1,16 @@
+MML 2.0.33 changes
+==================
+
+Android 13 resource-link fix
+----------------------------
+- Removed android:windowOptOutEdgeToEdgeEnforcement from the base theme. That framework attribute
+  is from API 35 and cannot be linked when MML intentionally compiles against Android API 33.
+- Added a policy regression check that rejects that API-35 resource while compileSdk remains 33.
+- No functional log-view behavior from 2.0.32 was changed.
+
+Build target
+------------
+- compileSdk 33
+- minSdk 33
+- targetSdk 33
+- Android NDK is not required.

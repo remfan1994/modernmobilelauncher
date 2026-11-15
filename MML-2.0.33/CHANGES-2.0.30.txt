@@ -1,0 +1,25 @@
+MML 2.0.30 changes
+==================
+
+Settings usability
+------------------
+- Long-press any Settings control for a full-screen plain-language explanation; Back dismisses it.
+- Custom log-detail checkboxes also have long-press explanations for the exact event category.
+- Settings preserves its scroll position when a toggle or other setting rebuilds the screen.
+
+Usage Access cleanup
+--------------------
+- App activity history is now the one Usage Access capture switch. The redundant per-type
+  App activity detail capture switches are removed.
+- All supported UsageEvents are captured when App activity history is enabled; Custom log detail
+  remains the per-type display filter.
+- The initial retained Usage Access import is assigned to history-only sessions instead of the
+  current Home session.
+- A one-time 2.0.30 repair moves obviously delayed Usage rows that 2.0.29 attached to the current
+  session into history-only sessions without deleting them.
+
+USER_PRESENT
+------------
+- Direct ACTION_USER_PRESENT capture is restored as a DEVICE / USER_PRESENT record.
+- It is independent of Usage Access and is not conditioned on a preceding screen event.
+- USER_PRESENT remains an Android system-presence broadcast, not a physical-motion sensor.

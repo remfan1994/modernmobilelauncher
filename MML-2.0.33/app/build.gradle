@@ -1,0 +1,19 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'vip.thatiam.mml'
+    compileSdk 33
+    defaultConfig {
+        applicationId 'vip.thatiam.mml'
+        minSdk 33
+        targetSdk 33
+        versionCode 20033
+        versionName '2.0.33'
+        testApplicationId 'vip.thatiam.mml.tests'
+        testInstrumentationRunner 'vip.thatiam.mml.RegressionRunner'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes { release { minifyEnabled false } }
+}

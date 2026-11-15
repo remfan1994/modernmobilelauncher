@@ -1,0 +1,14 @@
+MML 2.0.32 changes
+==================
+
+- Replaced the Home calendar-date header with the active log-view name.
+- Tapping the view label cycles Notifications -> Communications -> Apps -> Device -> Full -> Custom.
+- Long-pressing the Home view label opens Custom log detail directly; Settings is no longer required for routine view changes.
+- Notifications shows posted/active notifications.
+- Communications shows notifications, calls and SMS.
+- Apps shows app resumed, app paused/stopped, app interaction and foreground-service events.
+- Device shows screen/lock state, device startup/shutdown and direct DEVICE records including USER_PRESENT.
+- Full shows every saved log row; Custom uses the individual type mask.
+- USER entries and the mandatory Bloodguilt warning remain visible in filtered views.
+- Settings retains Log view as an alternate selector and retains long-press explanations.
+- The selected view persists across process recreation.

@@ -1,0 +1,2 @@
+PASS: parsed 3 XML files
+PASS: API-35 windowOptOutEdgeToEdgeEnforcement is absent

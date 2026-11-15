@@ -1,0 +1,11 @@
+....plaintext log policy: PASS
+Compiler has no Java 8 platform signatures; using the official Android android.jar and core-lambda-stubs.jar bootclasspath with Java 8 source and bytecode targets.
+..Compiler has no Java 8 platform signatures; using the official Android android.jar and core-lambda-stubs.jar bootclasspath with Java 8 source and bytecode targets.
+..error: cannot find symbol
+java.lang.OutOfMemoryError
+permission denied
+...............................................................................
+----------------------------------------------------------------------
+Ran 87 tests in 0.028s
+
+OK

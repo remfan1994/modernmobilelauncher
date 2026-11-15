@@ -1,0 +1,5 @@
+usage: build_apk.py [-h] [--output OUTPUT] [--sdk SDK] [--keystore KEYSTORE]
+                    [--alias ALIAS] [--name NAME] [--instrumentation]
+                    [--app-classes APP_CLASSES]
+                    project
+build_apk.py: error: Set ANDROID_SDK_ROOT or supply --sdk.
